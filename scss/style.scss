@@ -224,6 +224,11 @@ h1, h2, h3, h4, h5,
 	font-family: $font-family-sans-serif;
 }
 
+.navbar-brand {
+
+	border: 2px solid #000; /* Adjust border thickness and color as needed */
+
+}
 
 .bg-image {
   background-size: cover;
