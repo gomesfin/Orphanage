@@ -161,11 +161,11 @@ h1, h2, h3, h4, h5,
 .navbar-brand {
   text-transform: uppercase;
   letter-spacing: .1em;
-  /*border: 2px solid #f7ca44;
+  border: 2px solid #f7ca44;
   padding: 0px 3px;
   border-radius: 4px;
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);*/
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);*/
   font-size: 1.8rem !important;
   font-family: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
