@@ -281,9 +281,22 @@
   
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>
+  // Wait until the DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select all images on the page
+    const images = document.querySelectorAll('img');
+    
+    images.forEach((img) => {
+      // For each image, listen for a "contextmenu" (right-click) event
+      img.addEventListener('contextmenu', (event) => {
+        event.preventDefault();  // Disable the right-click context menu
+      });
+    });
+  });
+  </script>
+    
     
   </body>
 </html>
