@@ -440,7 +440,7 @@
         <div class="col-md-12 text-center">
           
             <p>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Africa Home Haven Foundation &copy</a>
+            Africa Home Haven Foundation | <script>document.write(new Date().getFullYear());</script>
             </p>
           
         </div>
@@ -470,6 +470,19 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script>
+  // Wait until the DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select all images on the page
+    const images = document.querySelectorAll('img');
     
+    images.forEach((img) => {
+      // For each image, listen for a "contextmenu" (right-click) event
+      img.addEventListener('contextmenu', (event) => {
+        event.preventDefault();  // Disable the right-click context menu
+      });
+    });
+  });
+</script>  
   </body>
 </html>
