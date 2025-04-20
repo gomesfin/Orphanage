@@ -101,8 +101,18 @@
             <img src="images/mesfin_img.jpeg" alt="Image placeholder" class="img-fluid">
             <div class="donate-info">
               <h2>Mesfin Gobena</h2>
-              <span class="time d-block mb-3">Donated 10 hour ago</span>
-              <p>Donated <span class="text-success">$750</span> <br> <em>for</em> <a href="#" class="link-underline fundraise-item">Every Child deserves more than war</a></p>
+              <span class="time d-block mb-3">Donated <span id="weeksCount">...</span> weeks ago</span>
+                <script>
+                    const startDate = new Date(2025, 3, 2); // Feb 2, 2025
+                    function updateWeeksSince() {
+                      const now = new Date();
+                      const timeDiff = now - startDate;
+                      const daysPassed = timeDiff / (1000 * 60 * 60 * 24);
+                      const weeksPassed = Math.floor(daysPassed / 7);
+                      document.getElementById('weeksCount').textContent = weeksPassed;
+                    }
+                    updateWeeksSince();
+                  </script>              <p>Donated <span class="text-success">$750</span> <br> <em>for</em> <a href="#" class="link-underline fundraise-item">Every Child deserves more than war</a></p>
             </div>
           </div>    
         </div>
